@@ -1,0 +1,18 @@
+Creación de un proyecto React con Vite
+instalar yarn para la creación del proyecto con vite
+npm install --global yarn
+
+creación del proyecto vite mediante yarn
+yarn create vite
+
+
+
+Done. Now run:
+  Entrar a la carpeta del proyecto
+  cd 03-counter-app-vite
+  
+  instalar la dependencias del proyecto
+  yarn
+
+ ejecutar el proyecto
+  yarn dev
