@@ -6,3 +6,11 @@ body {
     font-size: 1.1rem;
     padding: 70px;
 }
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: monospace;
+    background-color: rgb(181, 188, 194);
+    margin-right: 5px;
+}

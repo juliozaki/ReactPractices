@@ -7,7 +7,7 @@ import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWorldApp title="Soy un PROP" numero={123} />
-        <FirstApp />
+        <HelloWorldApp title="Número: " numero={123} />
+        <FirstApp valor={1000} />
     </React.StrictMode>
 );
