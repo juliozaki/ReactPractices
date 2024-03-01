@@ -1,17 +1,32 @@
 
 //import React from 'react'
+//import { getGifs } from '../helpers/getGifs';
+//import { useEffect, useState } from 'react';
+import { GifItem } from './GifItem';
+import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ categoria }) => {
 
-    const getGifs = () => {
-
-        const url = `api.giphy.com/v1/gifs/trending?api_key=H1cRMQ7pnjZ4Evea7VldAQoHGbo2lB7W&q=${categoria}&limit=10`
-    }
+    const { images, isLoading } = useFetchGifs(categoria);
 
     return (
         <>
             <h3>{categoria}</h3>
-            <p>Hola Mundo</p>
+            {
+                ///utilizar validación ternaria de TRUE
+                isLoading && (<h2>cargando...</h2>)
+            }
+            <div className='card-grid'>
+                {
+                    images.map((image) => (
+                        //<li key={image.id}>{image.title}  {image.url}</li>
+                        <GifItem
+                            key={image.id}
+                            {...image}
+                        />
+                    ))
+                }
+            </div>
         </>
     )
 }
