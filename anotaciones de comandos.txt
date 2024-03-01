@@ -16,3 +16,6 @@ Done. Now run:
 
  ejecutar el proyecto
   yarn dev
+
+  build del proyecto 
+  yarn build
