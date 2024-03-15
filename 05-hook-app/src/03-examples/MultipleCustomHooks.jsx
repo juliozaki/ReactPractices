@@ -8,6 +8,8 @@ export const MultipleCustomHooks = () => {
     const { counter, increment, decrement } = useCounter(1);
     const { data, hasError, isLoading } = useFetch(`https://pokeapi.co/api/v2/pokemon/${counter}`);
 
+    console.log('que patsoo');
+
     return (
         <>
             <h1>Información de Pokémon</h1>

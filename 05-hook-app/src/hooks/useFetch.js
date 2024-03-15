@@ -57,7 +57,7 @@ export const useFetch = (url) => {
                     code: resp.status,
                     message: resp.statusText
                 }
-            })
+            });
 
             return;
         }
@@ -68,7 +68,9 @@ export const useFetch = (url) => {
             isLoading: false,
             hasError: false,
             error: null
-        })
+        });
+
+        console.log('llamo el API');
 
         localCache[url] = data;
     }
