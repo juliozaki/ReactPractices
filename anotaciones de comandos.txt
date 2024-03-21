@@ -1,4 +1,9 @@
-Creación de un proyecto React con Vite
+1.Antes que nada tenemos que instalar NodeJs para instalar el npm (Node Package Manager) que es el administrador de paquetes oficial de NodeJs
+
+Hay algunas maneras de crear un proyecto React, la más reciente y más eficiente es con Vite. Además de usar Vite, utilizaremos el administrador de paquetes creado por Facebook llamdo Yarn.
+
+Creación de un proyecto React con Vite y Yarn.
+
 instalar yarn para la creación del proyecto con vite
 npm install --global yarn
 
