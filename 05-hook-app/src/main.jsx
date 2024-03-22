@@ -1,7 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { GridApp } from './20-grid/GridApp';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import { MainApp } from './09-useContext/MainApp';
+//import { GridApp } from './20-grid/GridApp';
 //import { TodoApp } from './08-useReducer/TodoApp';
 //import { Padre } from './07-tarea-memo/Padre'
 //import { CallbackHook } from './06-memos/CallbackHook'
@@ -18,6 +20,8 @@ import { GridApp } from './20-grid/GridApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-  <GridApp />
   //</React.StrictMode>,
+  <BrowserRouter>
+    <MainApp />
+  </BrowserRouter>
 )
