@@ -24,3 +24,7 @@ Done. Now run:
 
   build del proyecto 
   yarn build
+
+
+  Instalar nueva librería
+  yarn add react-router-dom
