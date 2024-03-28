@@ -8,6 +8,8 @@ export const HeroCard = ({
     characters
 }) => {
 
+    const imageUrl = `/assets/`;
+
     return (
         <div className='col'>
             <div className='card'>
