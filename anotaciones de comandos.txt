@@ -16,15 +16,18 @@ Done. Now run:
   Entrar a la carpeta del proyecto
   cd 03-counter-app-vite
   
-  instalar la dependencias del proyecto
+instalar la dependencias del proyecto
   yarn
 
- ejecutar el proyecto
+ejecutar el proyecto
   yarn dev
 
-  build del proyecto 
+build del proyecto 
   yarn build
 
 
-  Instalar nueva librería
+Instalar nueva librería
   yarn add react-router-dom
+
+Query String:
+  yarn add query-string
