@@ -31,3 +31,6 @@ Instalar nueva librería
 
 Query String:
   yarn add query-string
+
+Redux toolkit:
+  yarn add @reduxjs/toolkit react-redux
