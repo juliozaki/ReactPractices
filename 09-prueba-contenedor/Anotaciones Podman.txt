@@ -1,0 +1,48 @@
+Después de instalar el WSL (virtualizador de windows) y Podman, ejecutar la instalación de fedora que contiene podman:
+
+    podman machine init
+
+
+
+	Downloading VM image: v20240708031220-5.1-rootfs-amd64.tar.zst: done
+	Extracting compressed file: podman-machine-default-amd64: done
+	Importing operating system into WSL (this may take a few minutes on a new WSL install)...
+	Configuring system...
+	Machine init complete
+	To start your machine run:
+
+        	podman machine start
+
+
+
+Iniciar la maquina virtual con podman:
+
+	podman machine start
+
+Detener la maquina virtual con podman:
+
+	podman machine stop
+
+
+Para instalar Postman compose, se debe tener instalado Pip3 de Python ya que esta es una librería escrita en este lenguaje, para instalar COMPOSE solo ejecutamos:
+
+	pip3 install podman-compose
+
+Mostrar los contenedores que están corriendo:
+
+	podman ps
+
+Mostrar contenedores detenidos:
+
+	podman ps -a
+
+Acceder a la base de datos desde BASH (puede no tener bash intentar con sh):
+
+	podman exec -it my_container bash
+	psql -U my_user my_database
+
+Construir una imagen desde un docker file:
+	podman build -t nombre_app .
+
+Construir un contenedor desde un yarm y al final ejecutar en background con -d:
+	podman compose -f app-compose.yml up -d
